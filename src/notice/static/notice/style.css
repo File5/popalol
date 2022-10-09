@@ -41,6 +41,7 @@ body {
     padding: 0.5rem;
     font-style: normal;
     font-weight: 200;
+    text-transform: uppercase;
 }
 
 .c1 {
@@ -65,4 +66,12 @@ body {
 
 .c0 {
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.displayed-text {
+    display: inline;
 }

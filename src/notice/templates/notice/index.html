@@ -10,10 +10,18 @@
 </head>
 <body>
     <input type="hidden" id="textvalue" value="Test text ">
-    <div id="bgtext"></div>
-    <div id="heading">
-        <h1></h1>
+    <div id="bgtext">
+        {% for j in rows %}
+            <span class="c0 {% cycle 'hidden' 'displayed-text' %}">{{ shorttext }}</span>
+            {% for i in cols %}
+            <span class="c{% cycle 0 1 2 3 4 5 %}">{{ text }}</span>
+            {% endfor %}
+            <br>
+        {% endfor %}
     </div>
-    <script src="{% static 'notice/script.js' %}"></script>
+    <div id="heading">
+        <h1>{{ text }}</h1>
+    </div>
+    <!--<script src="{% static 'notice/script.js' %}"></script>-->
 </body>
 </html>
