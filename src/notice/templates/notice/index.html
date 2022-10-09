@@ -1,12 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=360, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'notice/style.css' %}">
     <title>Index</title>
 </head>
 <body>
-    <h1>index.html</h1>
+    <input type="hidden" id="textvalue" value="Test text ">
+    <div id="bgtext"></div>
+    <div id="heading">
+        <h1></h1>
+    </div>
+    <script src="{% static 'notice/script.js' %}"></script>
 </body>
 </html>
