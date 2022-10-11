@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    text = "Test text"
+    text = ' '.join(request.get_host().split('.')[:-1])
     context = {
         "rows": range(120),
         "cols": range(60),
